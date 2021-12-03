@@ -18,9 +18,6 @@ function mostCommon(arr, fallback) {
 let o2nums = [...input]
 let co2nums = [...input]
 
-let o2 = '';
-let co2 = '';
-
 for(let i = 0; i < 12 && o2nums.length > 1; i++) {
   const common = mostCommon(column(o2nums, i), 1)
   o2nums = o2nums.filter(a => a[i] == common)
